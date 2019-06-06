@@ -1,0 +1,31 @@
+<%- include('../includes/header.ejs') %>
+<link rel="stylesheet" href="css/form.css">
+<body>
+        <%- include('../includes/navigation.ejs') %>
+
+    <main>
+           
+        <div class="innerContent">
+            <div class="form-control innerContent-each">
+                <form action="/signup" method="POST">
+                    <input type="text" name="name" value="" placeholder="Full Name" />
+
+                    <input type="text" name="email" value="" placeholder="E-mail" />
+
+                    <input type="password" name="password" value="" placeholder="Password" />
+
+                    <input type="password" name="pin" value="" placeholder="Card Pin" />
+
+                    <input type="number" name="accountNumber" value="" placeholder="Account Number" />
+
+                    <input type="hidden" name="amount" />
+                    
+                    <p class="signup">Have an account? <a href="/">login</a></p>
+
+                    <div class="btn"><button>SignUp</button></div>
+                </form>
+            </div>
+    </main>
+
+
+<%- include('../includes/footer.ejs') %>

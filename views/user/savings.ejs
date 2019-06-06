@@ -1,0 +1,54 @@
+<%- include('../includes/header.ejs') %>
+<body>
+        <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <div class="mainContent">
+            <h2><strong><%=addCred.user.name%></strong></h2>
+            <input type="hidden" name="transactionId" />
+            <div class="account">
+                    <h4><strong>Account Number: </strong><%=addCred.user.accountNumber%></h4>
+
+                    <p>Current Amount: <strong>N <%=addCred.sum || 0.00%></strong></p>
+                </div>
+            </div>
+        <div class="innerContent">
+            <div class="innerContent-each">
+                <h4>Last Month Expenses</h4><br>
+                <p><em>Movies Ticket:</em>N53,500</p> <br>
+                <p><em>Lawma Bills:</em>N23,500</p><br>
+                <p><em>Lawma Bills:</em>N23,500</p><br>
+                <p><em>Lawma Bills:</em>N23,500</p><br>
+                <p><em>Lawma Bills:</em>N23,500</p><br>
+                <p><em>Lawma Bills:</em>N23,500</p><br>
+            </div>
+
+            <div class="innerContent-each">
+                    <h4>Re-Occurent Bills</h4><br>
+                    <p><em>House Rent:</em>N53,500 <span>Cancel</span></p> <br>
+                    <p><em>NEPA Bill:</em>N23,500 <span>Cancel</span></p><br>
+                    <p><em>School Fees:</em>N23,500 <span>Cancel</span></p><br>
+                    <p><em>Water Bills:</em>N23,500 <span>Cancel</span></p><br>
+                    <p><em>Tax:</em>N23,500 <span>Cancel</span></p><br>
+            </div>
+
+            <div class="innerContent-each">
+                    <h4>Last Month Expenses</h4><br>
+                    <p><em>Movies Ticket:</em>N53,500</p> <br>
+                    <p><em>Lawma Bills:</em>N23,500</p><br>
+                    <p><em>Lawma Bills:</em>N23,500</p><br>
+                    <p><em>Lawma Bills:</em>N23,500</p><br>
+                    <p><em>Lawma Bills:</em>N23,500</p><br>
+                    <p><em>Lawma Bills:</em>N23,500</p><br>
+                </div>
+        </div>
+
+        <div class="btn">
+            <form action="/pay" method="GET">
+                <button>Pay Into Your Account</button>
+            </form>
+        </div>
+    </main>
+
+
+<%- include('../includes/footer.ejs') %>

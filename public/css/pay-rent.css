@@ -1,0 +1,14 @@
+.innerContent-each p{
+    line-height: 1.7;
+}
+
+.innerContent{
+    padding: 76px;
+}
+
+@media (max-width: 375px){
+    .innerContent{
+        display: block;
+        padding: 36px;
+    }
+}

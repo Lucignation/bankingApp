@@ -1,0 +1,58 @@
+<div class="backdrop"></div>
+
+<header role="navigation">
+    
+            <div class="brand"><h1>Saheer Online Banking</h1></div>
+
+            <button id="side-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="sideBar">
+                    <div>
+                            <nav>
+                                
+                                <ul id="menu">
+                                <%if(!isAuth){%>
+                                    <li class="banking-menu"><a class="<%= path === '/' ? 'active' : '' %>" href="/">Login</a></li>
+                                    <li class="banking-menu"><a class="<%= path === '/signup' ? 'active' : '' %>" href="/signup">SignUp</a></li>
+                                <%}else{%>
+                                    <li class="banking-menu"><a class="<%= path === '/savings' ? 'active' : '' %>" href="/savings">Savings</a></li>
+                                    <li class="banking-menu"><a class="<%= path === '/transfer' ? 'active' : '' %>" href="/transfer">Transfer</a></li>
+                                    <li class="banking-menu"><a class="<%= path === '/pay-rent' ? 'active' : '' %>" href="/pay-rent">Pay Rent</a></li>
+                                    <li class="banking-menu"><a class="<%= path === '/buy-airtime' ? 'active' : '' %>" href="/buy-airtime">Buy Airtime</a></li>
+                                    <li class="banking-menu"><a class="<%= path === '/quick-payment' ? 'active' : '' %>" href="/quick-payment">Quick Payment</a></li>
+                                    <li class="banking-menu"><a class="<%= path === '/generate-code' ? 'active' : '' %>" href="/generate-code">Generate Code</a></li>
+                                    <li class="banking-menu"><a class="<%= path === '/buy-ticket' ? 'active' : '' %>" href="/buy-ticket">Buy Ticket</a></li>
+                                    <li class="banking-menu"><a class="<%= path === '/pay-bills' ? 'active' : '' %>" href="/pay-bills">Pay Bills</a></li>
+                                    <li class="banking-menu"><a class="<%= path === '/block-card' ? 'active' : '' %>" href="/block-card">Block Card</a></li>
+                                    <form action="/logout" method="post">
+                                        <li class="banking-menu"><button type="submit">Logout</button></li></form>
+                                <%}%>
+                                </ul>
+                                
+                            </nav>
+                        </div>
+        
+        
+                        <div>
+                                <nav class="mobile-nav">
+                                    <ul class="mobile-nav__item-list">
+                                        <li class="mobile-nav__item"><a href="/">Login</a></li>
+                                        <li class="mobile-nav__item"><a href="/signup">SignUp</a></li>
+                                        <li class="mobile-nav__item"><a href="/savings">Transfer</a></li>
+                                        <li class="mobile-nav__item"><a href="/transfer">Transfer</a></li>
+                                        <li class="mobile-nav__item"><a href="/pay-rent">Pay Rent</a></li>
+                                        <li class="mobile-nav__item"><a href="/buy-airtime">Buy Airtime</a></li>
+                                        <li class="mobile-nav__item"><a href="/quick-payment">Quick Payment</a></li>
+                                        <li class="mobile-nav__item"><a href="/generate-code">Generate Code</a></li>
+                                        <li class="mobile-nav__item"><a href="/buy-ticket">Buy Ticket</a></li>
+                                        <li class="mobile-nav__item"><a href="/pay-bills">Pay Bills</a></li>
+                                        <li class="mobile-nav__item"><a href="/block-card">Block Card</a></li>
+                                    </ul>
+                                </nav>
+                        </div>
+                    </div>
+    </header>

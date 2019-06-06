@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    color: #6b6b6b;
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: #FFF;
+    padding: 20px;
+    font-size: 35px;
+}
+
+h2{
+    color: #01ac9d;
+    padding-top: 22px;
+    font-size: 30px;
+    text-align: center;
+}
+
+h4{
+    color: #01ac9d;
+}
+
+.account h4, .account {
+color: #6b6b6b;
+}
+
+ul li{
+    list-style: none;
+    line-height: 1.9;
+}
+
+.btn{
+    padding: 30px;
+}
+button{
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #01ac9d;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+
+button:hover{
+    color: #fff;
+    background-color: #6b6b6b;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.brand{
+    background-color: #01ac9d;
+    width: 100%;
+    height: 12%;
+}
+
+
+
+.banking-menu{ 
+    font-size: 20px;
+    width: 100%;
+}
+
+nav #menu{
+    background-color: #3b3b3b;
+    padding: 20px 55px;
+    width: 65%;
+    height: 82vh;
+}
+
+.banking-menu a:hover,
+.banking-menu a:active,
+.banking-menu a.active{
+    background-color: #01ac9d; 
+    display: block;
+    box-sizing: border-box;
+    width: 140%;
+    box-shadow: 0 8px 6px -6px #000;
+    -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-in-out;
+    cursor: pointer;
+}
+
+/* .authLogin ul li a{
+    color: #01ac9d;
+    cursor: pointer;
+}
+
+.authLogin ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    margin: auto;
+    float: right;
+    padding-top: -50px;
+} */
+
+.sideBar{
+    float: left;
+    width: 18%;
+}
+
+.mainContent{
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 0 8px 6px 6px #00000015;
+    padding-bottom: 20px;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: none;
+  }
+
+  .innerContent-each{
+    padding: 20px 5px;
+    width: 27%;
+    text-align: center;
+    box-shadow: 0 8px 6px 6px rgba(0, 0, 0, 0.205);
+  }
+
+  .innerContent-each span{
+      color:  red;
+  }
+
+  .mobile-nav {
+    width: 30rem;
+    height: 100vh;
+    max-width: 70%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: white;
+    z-index: 10;
+    padding: 2rem 1rem 1rem 2rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .mobile-nav.open {
+    transform: translateX(0);
+  }
+  
+  .mobile-nav__item-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mobile-nav__item {
+    margin: 1rem;
+    padding: 0;
+  }
+  
+  .mobile-nav__item a,
+  .mobile-nav__item button {
+    font: inherit;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+  
+  .mobile-nav__item a:active,
+  .mobile-nav__item a:hover,
+  .mobile-nav__item a.active,
+  .mobile-nav__item button:hover,
+  .mobile-nav__item button:active {
+    background: #01ac9d;
+    color: white;
+    border-radius: 3px;
+  }
+
+   #side-menu-toggle {
+    float: right;
+    background: transparent;
+  }
+
+  #side-menu-toggle span{
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #01ac9d;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background-color 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+  
+  #side-menu-toggle:focus {
+    outline: none;
+  }
+  
+  #side-menu-toggle:active,
+  #side-menu-toggle:hover {
+    color: #01ac9d;
+    border-color: #01ac9d;
+  }
+
+  .innerContent{
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 35px;
+  }
+
+footer{
+    text-align: center;
+    background-color: #01ac9d;
+    color: #fff;
+    padding: 17px;
+    position: fixed;
+    width: 100%;
+}
+
+@media (max-width: 375px){
+    h1{
+        font-size: 25px;
+    }
+    nav{
+        font-size: 12px;
+        width: 22%;
+        padding: 10px 25px;
+    }
+    .banking-menu{ 
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 11px;
+    }
+
+    nav{
+        width: 35%;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    nav #menu{
+        display: none;
+    }
+
+    .innerContent{
+        display: block;
+    }
+
+    .innerContent-each{
+        width: 100%;
+      }
+
+      h2{
+        font-size: 20px;
+    }
+
+    .account h4, .account {
+        font-size: 13px;
+        }
+    
+}
+
+@media (min-width: 414px){
+    #side-menu-toggle{
+        display: none;
+    }
+}
+
+
+/* 
+#menuToggle{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+    display: block;
+
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background-color 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-last(2){
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2){
+    transform: rotate(-45deg) scale(0, -1);
+}
+
+#menu{
+    position: absolute;
+    width:300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li{
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul{
+    transform: none;
+} */
+
+
+

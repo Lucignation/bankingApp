@@ -1,0 +1,40 @@
+<%- include('../includes/header.ejs') %>
+<link rel="stylesheet" href="css/pay-rent.css">
+<body>
+        <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <div class="mainContent">
+            <h2><strong><%=addCred.name%></strong></h2>
+            <div class="account">
+                    <h4><strong>Account Number: </strong><%=addCred.accountNumber%></h4>
+
+                    <p>Current Amount: <strong>N <%=addCred.account.transaction.amount || 0.00%></strong></p>
+                </div>
+            </div>
+        <div class="innerContent">
+            <div class="innerContent-each">
+                    <h4>Current House</h4><br>
+                    <p>Mummy's house in Lekki needs to be paid for in the next <em>CountDown</em></p>
+                    <p><em>Amount:</em>N984,700 <span>Cancel</span></p><br>
+                    <div class="btn"><button>Pay Now</button></div>
+            </div>
+
+            <div class="innerContent-each">
+                    <h4>Lekki House</h4><br>
+                    <p>Mummy's house in Lekki needs to be paid for in the next <em>CountDown</em></p>
+                    <p><em>Amount:</em>N724,600 <span>Cancel</span></p><br>
+                    <div class="btn"><button>Pay Now</button></div>
+            </div>
+
+            <div class="innerContent-each">
+                    <h4>Agege House</h4><br>
+                    <p>Cousin's house in Agege needs to be paid for in the next <em>CountDown</em></p>
+                    <p><em>Amount:</em>N244,200 <span>Cancel</span></p><br>
+                    <div class="btn"><button>Pay Now</button></div>
+                </div>
+        </div>
+    </main>
+
+
+<%- include('../includes/footer.ejs') %>

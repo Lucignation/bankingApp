@@ -1,0 +1,23 @@
+<%- include('../includes/header.ejs') %>
+<link rel="stylesheet" href="css/form.css">
+<body>
+        <%- include('../includes/navigation.ejs') %>
+
+    <main>
+           
+        <div class="innerContent">
+            <div class="form-control innerContent-each">
+                <form action="/" method="POST">
+                    <input type="text" name="email" value="" placeholder="E-mail" />
+
+                    <input type="password" name="password" value="" placeholder="Password" />
+                    
+                    <p class="signup">Don't remember password? <a href="/reset">reset</a></p>
+
+                    <div class="btn"><button>Login</button></div>
+                </form>
+            </div>
+    </main>
+
+
+<%- include('../includes/footer.ejs') %>

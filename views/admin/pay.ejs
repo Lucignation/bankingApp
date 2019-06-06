@@ -1,0 +1,32 @@
+<%- include('../includes/header.ejs') %>
+<link rel="stylesheet" href="css/form.css">
+<body>
+        <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <div class="mainContent">
+            <h2><strong><%=addCred.name%></strong></h2>
+            <div class="account">
+                    <h4><strong>Account Number: </strong><%=addCred.accountNumber%></h4>
+
+                    <p>Current Amount: <strong>N <%=addCred || 0.00%></</strong></p>
+                </div>
+            </div>
+        <div class="innerContent">
+            <div class="form-control innerContent-each">
+                <form action="/pay" method="POST">
+
+                    <input type="number" name="accountNumber" value="" placeholder="Account Number" />
+                    
+                    <input type="number" name="amount" value="" placeholder="Amount"/>
+
+                    <input type="pin" name="pin" value="" placeholder="PIN"/>
+                    
+                    <div class="btn"><button>Fuel my Account</button></div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+<%- include('../includes/footer.ejs') %>

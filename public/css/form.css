@@ -1,0 +1,52 @@
+.innerContent-each input{
+    box-sizing: border-box;
+    display: block;
+}
+
+.innerContent-each{
+    padding-top: 50px;
+    width: 80%;
+    line-height: 2;
+}
+
+.innerContent{
+    padding: 26px;
+}
+
+.form-control {
+    margin: 1rem 0;
+  }
+  
+  .form-control label,
+  .form-control input,
+  .form-control select {
+    display: block;
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .form-control input,
+  .form-control select {
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 2px;
+  }
+  
+  .form-control input:focus,
+  .form-control select:focus {
+    outline-color: #00695c;
+  }
+  
+  .form-control input.invalid,
+  .form-control select.invalid {
+    border-color: red;
+  }
+
+  .signup a{
+    color: #00695c;
+  }
+
+  
